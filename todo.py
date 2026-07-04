@@ -120,7 +120,13 @@ while True :
             print("Task Not Found")
 
     
-    
+    # Exit Program 
+    if choice == "6" :
+        print("Exiting Program")
+        break
+
+    else:
+        print("❌ Invalid Choice! Please Enter a Number Between 1 and 6.")
 
 
 
