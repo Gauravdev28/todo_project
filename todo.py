@@ -97,7 +97,31 @@ while True :
         if not found:
             print("❌ Task Not Found.")
 
+
+    # Delete Task 
+    if choice == "5" :
+
+        delete = input("Enter Task Name :") 
+        found = False
+
+        for task in todo :
             
+            if task["task"].lower() == delete.lower():
+                todo.remove()
+
+                save_todo()
+
+                print("Task Deleted")
+
+                found = True
+                break
+
+        if not found:
+            print("Task Not Found")
+
+    
+    
+
 
 
     
