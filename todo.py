@@ -57,3 +57,25 @@ while True :
 
     
     # Search Task
+    if choice == "3" :
+
+        search = input("Enter Task Name :")
+        found = False
+
+        for task in todo :
+
+            if task["task"].lower() == search.lower() :
+
+                print("Task Found")
+                print(f"Task :{task['task']}")
+                print(f"Status : {task['status']}")
+
+
+            found = True 
+            break
+
+        if not found :
+            print("No Task Found with this name ")
+
+
+            
