@@ -17,10 +17,9 @@ while True :
     print("1. Add Task")
     print("2. View Tasks")
     print("3. Search Task")
-    print("4. Update Task")
-    print("5. Mark Task Completed")
-    print("6. Delete Task")
-    print("7. Exit")
+    print("4. Mark Task Completed")
+    print("5. Delete Task")
+    print("6. Exit")
 
     choice = input("Enter Your Choice: ")
 
@@ -78,4 +77,27 @@ while True :
             print("No Task Found with this name ")
 
 
+    # Mark Task 
+    if choice == "4" :
+
+        complete = input("Enter Task Name :") 
+        found = False 
+
+        for task in todo :
             
+            if task["task"].lower() == complete.lower() :
+                task["status"] = "Complete"
+
+                save_todo()
+                print("✅ Task Marked as Completed!")
+
+                found = True
+                break
+
+        if not found:
+            print("❌ Task Not Found.")
+
+            
+
+
+    
