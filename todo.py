@@ -49,4 +49,11 @@ while True :
         else :
             print("\n========== TASK LIST ==========")
 
-            for i in 
+            for i , task in enumerate(todo , start=1) :
+
+                print(f"{i}. {task['task']}")
+                print(f"Status : {task['status']}")
+                print("-"*40)
+
+    
+    # Search Task
