@@ -21,7 +21,7 @@ while True :
     print("5. Delete Task")
     print("6. Exit")
 
-    choice = input("Enter Your Choice: ")
+    choice = input("\nEnter Your Choice: ")
 
     # Add Task 
     if choice == "1" :
@@ -33,7 +33,7 @@ while True :
             "status" : "Pending" ,
         }
 
-        todo.append[new_task]
+        todo.append(new_task)
         save_todo() 
 
         print("Task Added Successfull")
@@ -125,8 +125,8 @@ while True :
         print("Exiting Program")
         break
 
-    else:
-        print("❌ Invalid Choice! Please Enter a Number Between 1 and 6.")
+else:
+    print("❌ Invalid Choice! Please Enter a Number Between 1 and 6.")
 
 
 
